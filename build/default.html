@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dankory</title>
+    <title>Dankory</title>
+    <!-- todo favicon library -->
     <link rel="icon" type="image/png" sizes="32x32" href="../public/assets/img/logos/dankory-fav500x500.png">
+    <!-- todo css connection -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- todo google font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
 
     <style>
         .custom-shape-divider-bottom-1707789140 {
@@ -13,7 +19,6 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            overflow: hidden;
             line-height: 0;
         }
 
@@ -32,50 +37,103 @@
             background-size: cover;
             background-position: center;
         }
+        #aboutsection{
+            background: url('../public/assets/img/bg/dankory-bg5.png');
+            background-size: cover;
+            background-position: center;
+        }
 
     </style>
 </head>
 <body>
-    <section class="container mx-auto px-10 min-h-dvh overflow-hidden relative bg-slate-500" id="homesection">
-        <div class="custom-shape-divider-bottom-1707789140">
+    <section class="container mx-auto px-10 min-h-dvh overflow-hidden relative bg-slate-500 mb-0" id="homesection">
+        <div class="custom-shape-divider-bottom-1707789140 relative overflow-visible">
+            <img src="../public/assets/img/icons/cannabisleaf_nobg.png" alt="cannabis leaf" width="60" class="absolute bottom-3 rotate-45 left-72 z-10">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
             </svg>
         </div>
         <nav class="p-1 h-auto mt-2">
-            <div class="flex items-center">
+            <div class="flex items-center overflow-visible">
                 <div class="container flex justify-center items-center">
-                    <div class="grid grid-cols-3 gap-2">
-                        <h4 class="font-semibold">Home</h4>
+                    <div class="flex flex-row gap-10">
+                        <a href="#homesection">
+                            <h4 class="font-semibold hover:text-dankory-green">Home</h4>
+                        </a>
+                        
                         <h4 class="font-normal">Shop</h4>
                         <h4 class="font-normal">Distribution</h4>
                     </div>
-                    <img src="../public/assets/img/logos/dankory-homelogo.png" class="mx-8" alt="Dankory Logo" width="150">
-                    <div class="grid grid-cols-3 gap-2">
-                        <h4 class="font-normal">About us</h4>
+                    <img src="../public/assets/img/logos/dankory-homelogo.png" class="mx-10" alt="Dankory Logo" width="150">
+                    <div class="flex flex-row gap-8">
+                        <a href="#aboutsection">
+                            <h4 class="font-normal">About</h4>
+                        </a>
                         <h4 class="font-normal">Blog</h4>
                         <h4 class="font-normal">Contact</h4>
                     </div>
                 </div>
-                <div class="">
-                    <a>
-                        <img src="../public/assets/img/icons/grid.svg" class="bg-white p-2 rounded-md border-2 border-slate-400 ring-2 ring-emerald-500" alt="Grid Option Icon">
-                    </a>
-                    
-                </div>
             </div>
         </nav>
-        <div class="container flex justify-center items-center min-h-full">
-            <div class="container flex justify-center items-center">
-                
+        <div class="container flex h-64 ml-56 mt-32">
+            <div class="container flex justify-start items-center">
+                <div class="grid grid-rows-1 gap-1">
+                    <p class="tracking-widest text-base font-semibold text-dankory-green">WELCOME TO <span>THE DANKORY VISION</span></p>
+                    <h3 class="text-6xl font-bold text-slate-900 tracking-wider font-dankory-font" style="text-shadow: rgb(255, 255, 255) 0px 0 10px;">ONLY THE FINEST <br> MARIJUANA PRODUCTS</h3>
+                    <p class="font-medium">Dankory's vision is to provide consumers with the most refined marijuana on Earth.</p>
+                    <div class="flex flex-row w-full pt-10">
+                        <a class="shrink w-52 p-2 transition ease-in-out delay-150 hover:bg-white hover:text-dankory-green hover:ring-1 hover:ring-dankory-green hover:scale-110 rounded-3xl text-center bg-dankory-green font-bold text-white ring-1 ring-white">
+                            Shop Now
+                        </a>
+                        <a class="p-2 bg-slate-100 rounded-3xl flex justify-center ml-4 transition ease-in-out delay-200 hover:scale-125 ring-2 ring-emerald-900 hover:ring-dankory-green overflow-hidden">
+                            <img src="../public/assets/img/icons/cbd-pills.png" alt="CBD Pill" width="30">
+                        </a>
+                        <a class="p-2 bg-slate-100 rounded-3xl text-center max-w-14 ml-4 transition ease-in-out delay-200 hover:scale-125 ring-2 ring-emerald-900 hover:ring-dankory-green overflow-hidden">
+                            <img src="../public/assets/img/icons/joint.png" alt="CBD Pill" width="30">
+                        </a>
+                        <a class="p-2 bg-slate-100 rounded-3xl text-center max-w-14 ml-4 transition ease-in-out delay-200 hover:scale-125 ring-2 ring-emerald-900 hover:ring-dankory-green overflow-hidden">
+                            <img src="../public/assets/img/icons/vape.png" alt="CBD Pill" width="30">
+                        </a>
+                        <a class="p-2 bg-slate-100 rounded-3xl text-center max-w-14 ml-4 transition ease-in-out delay-200 hover:scale-125 ring-2 ring-emerald-900 hover:ring-dankory-green overflow-hidden">
+                            <img src="../public/assets/img/icons/grinder.png" alt="CBD Pill" width="30">
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- ! End of first section -->
 
-    <section class="bg-white min-h-dvh">
-        
+    <section class="bg-white min-h-dvh relative" id="aboutsection">
+        <div class="w-full h-dvh flex justify-center items-center">
+            <div class="grid grid-cols-2 gap-3">
+                <div class="flex">
+                    <img src="../public/assets/img/gallery/dankory-gallery1.png" alt="Jar of Cannabis">
+                </div>
+                <div class="justify-start mt-16">
+                    <div class="grid grid-rows-1 gap-1 text-balance max-w-full">
+                        <p class="font-semibold text-emerald-900 tracking-wider text-xl">Our Story</p>
+                        <p class="text-5xl font-dankory-font tracking-wider leading-9">All About <br> The Dankory Vision</p>
+                        <p>When it comes to the cannabis industry, quality is of the utmost importance.<br> When it comes to choosing the perfect smoke (just like our name suggests) <br> our products are some of the finest.</p>
+                        <p>This is because at Dankory, we thrive on creating the best smoking experience <br>for our patrons. We make this possible by researching and implementing <br>organic growing processes and optimum preservation methods, leaving our <br> patrons with a clean but potent product.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="../public/assets/img/icons/cannabisleaf_nobg.png" alt="cannabis leaf" width="125" class="absolute -bottom-7 -rotate-45 right-80 z-10">
+        </div>
 
     </section>
+    <section class="min-h-dvh bg-slate-300"> 
+
+    </section>
+    <script>
+        const button = document.getElementById('dropdownDefaultButton');
+        const dropdown = document.getElementById('dropdown');
+      
+        button.addEventListener('click', () => {
+          dropdown.classList.toggle('hidden');
+        });
+      </script>
 </body>
 </html>
